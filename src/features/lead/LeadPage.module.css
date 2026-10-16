@@ -1,0 +1,45 @@
+
+@value mobile from '../../design-system/breakpoints.module.css';
+
+
+.page {
+width: min(100% - var(--space-8), 840px);
+margin: var(--space-12) auto;
+}
+.heading { margin-bottom: var(--space-6); }
+.eyebrow {
+color: var(--color-accent);
+font-size: var(--font-small);
+font-weight: 700;
+letter-spacing: .08em;
+margin-bottom: var(--space-2);
+}
+.heading h1 { font-size: var(--font-title); line-height: 1.2; margin-bottom: var(--space-3); }
+.heading > p:last-child { color: var(--color-muted); margin-bottom: 0; }
+.card {
+background: var(--color-surface);
+border: 1px solid var(--color-border);
+border-radius: var(--radius-card);
+}
+
+
+.result {
+margin-top: var(--space-6);
+padding: var(--space-6);
+background: var(--color-accent-subtle);
+border: 1px solid var(--color-border);
+border-radius: var(--radius-card);
+overflow-wrap: anywhere;
+}
+.result h2 { font-size: var(--font-section); margin-bottom: var(--space-2); }
+.result h2:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 4px; }
+.result p { color: var(--color-muted); font-size: var(--font-small); }
+.result dl { margin: 0; }
+.result dl > div { padding-block: var(--space-3); border-top: 1px solid var(--color-border); }
+.result dt { font-size: var(--font-small); font-weight: 600; }
+.result dd { margin: var(--space-1) 0 0; white-space: pre-wrap; }
+
+
+@media (max-width: mobile) {
+.page { margin-block: var(--space-6); padding-bottom: calc(110px + env(safe-area-inset-bottom)); }
+}

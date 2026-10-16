@@ -1,0 +1,21 @@
+
+* { box-sizing: border-box; }
+html { color-scheme: light; scroll-padding-bottom: 140px; }
+body {
+margin: 0;
+background: var(--color-canvas);
+color: var(--color-text);
+font-family: var(--font-family);
+font-size: var(--font-body);
+line-height: 1.6;
+}
+h1, h2, p { margin-top: 0; }
+button, input, select, textarea { font: inherit; }
+
+
+input, select, textarea, h2 { scroll-margin-block: 24px 150px; }
+
+
+@media (prefers-reduced-motion: reduce) {
+*, *::before, *::after { transition: none !important; }
+}
